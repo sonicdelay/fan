@@ -1,0 +1,19 @@
+{
+
+  "description": "FF / Chrome Browser extension for flexible social media following",
+  "manifest_version": 2,
+  "name": "Fan",
+  "version": "1.0",
+  "homepage_url": "https://github.com/sonicdelay/tree/main/fan",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["fan.js"]
+    }
+  ]
+
+}
