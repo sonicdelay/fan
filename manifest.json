@@ -4,14 +4,14 @@
   "manifest_version": 2,
   "name": "Fan",
   "version": "1.0",
-  "homepage_url": "https://github.com/sonicdelay/tree/main/fan",
+  "homepage_url": "https://github.com/sonicdelay/fan",
   "icons": {
     "48": "icons/border-48.png"
   },
 
   "content_scripts": [
     {
-      "matches": ["*"],
+      "matches": ["<all_urls>"],
       "js": ["fan.js"]
     }
   ]
