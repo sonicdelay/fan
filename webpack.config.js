@@ -1,5 +1,6 @@
 //"use strict";
 const path = require("path");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   devtool: "inline-source-map",
@@ -13,6 +14,10 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
       },
       {
         test: /\.s[ac]ss$/i,
@@ -30,6 +35,15 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+       // { from: path.resolve(__dirname, "manifest.json") },
+        { from: "icons", to: "icons" },
+      ],
+    }),
+  ],
+
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
   },
