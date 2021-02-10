@@ -38,8 +38,8 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin({
       patterns: [
-       // { from: path.resolve(__dirname, "manifest.json") },
-        { from: "icons", to: "icons" },
+        { from: path.resolve(__dirname, "src/manifest.json") },
+        { from: "src/icons", to: "icons" },
       ],
     }),
   ],
