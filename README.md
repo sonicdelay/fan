@@ -1,13 +1,15 @@
-# vanilla ts-loader
+# Fan extension
+Special features for known websites
+
 
 ```shell
-yarn install
+npm install
 
-# Run in watch mode
-yarn watch
+# Run
+npm run dev
 
 # Run in production mode
-yarn build 
+npm run build 
 ```
 
 To see your output simply open up the `index.html` file in your browser of choice.
