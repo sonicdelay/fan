@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --progress --color",
-    "start:firefox": "web-ext run --source-dir ./dist/"
+    "dev": "webpack-dev-server --mode development --progress --color",
+    "start": "web-ext run --source-dir ./dist/"
   },
   "devDependencies": {
     "css-loader": "^5.0.2",
